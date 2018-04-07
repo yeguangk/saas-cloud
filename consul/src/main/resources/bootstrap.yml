@@ -8,7 +8,7 @@ spring:
   cloud:
 
     consul:
-      host: 192.168.1.104
+      host: 192.168.1.106
       port: 8500
       enabled: true
       discovery:

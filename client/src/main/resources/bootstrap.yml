@@ -20,7 +20,6 @@ spring:
         tags: client
       config:
         enabled: true
-        prefix: config
         format: files
         watch:
           wait-time: 10
