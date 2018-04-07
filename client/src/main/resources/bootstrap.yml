@@ -5,7 +5,7 @@ spring:
   # spring cloud 配置
   cloud:
     consul:
-      host: 192.168.1.104
+      host: 192.168.1.106
       port: 8500
       enabled: true
       discovery:
@@ -23,3 +23,4 @@ spring:
         format: files
         watch:
           wait-time: 10
+        prefix: ${spring.application.name}
