@@ -1,22 +1,2 @@
-spring:
-  application:
-    name: opzoon-saas
-
-  # spring cloud 配置
-  cloud:
-    consul:
-      host: 192.168.1.106
-      port: 8500
-      enabled: true
-      discovery:
-        enabled: true
-
-        #服务的ID,在配置的时候不需要配置这一项，在多台服务器，多次部署的情况下会导致服务注册只有一个
-        instanceId:  ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
-        service-name: ${spring.application.name}
-        prefer-ip-address: true
-        health-check-path: /health
-        health-check-interval: 10s
-
 server:
   port: 8802
