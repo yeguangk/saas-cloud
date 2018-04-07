@@ -18,3 +18,9 @@ spring:
         health-check-path: /health
         health-check-interval: 10s
         tags: client
+      config:
+        enabled: true
+        prefix: config
+        format: files
+        watch:
+          wait-time: 10
