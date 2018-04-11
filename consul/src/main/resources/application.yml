@@ -1,2 +1,12 @@
 server:
   port: 8802
+  context-path: /opnextservice/
+applications: opzoon-saas-consul-client,opzoon-saas-consul-service
+
+turbine:
+  aggregator:
+   # 指定聚合哪些集群，多个使用","分割，默认为default。可使用http://.../turbine.stream?cluster={clusterConfig之一}访问
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+#  app-config-list: ${applications}
+#  app-config: ${applications}

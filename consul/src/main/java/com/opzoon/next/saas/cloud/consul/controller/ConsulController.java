@@ -19,25 +19,25 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConsulController {
     private static final Logger LOGGER = LoggerFactory.getLogger(ConsulController.class);
 
-    @Value("${consul}")
-    private String consul;
-    @Value("${name}")
-    private String name;
-    @Value("${env}")
-    private String env;
-    @Value("${env_data}")
-    private String envData;
-
-    @RequestMapping("test/config")
-    public String config(){
-        JsonObject jsonObject = new JsonObject();
-        jsonObject.addProperty("consul", consul);
-        jsonObject.addProperty("name", name);
-        jsonObject.addProperty("env", env);
-        jsonObject.addProperty("env_data", envData);
-
-        return jsonObject.toString();
-    }
+//    @Value("${consul}")
+//    private String consul;
+//    @Value("${name}")
+//    private String name;
+//    @Value("${env}")
+//    private String env;
+//    @Value("${env_data}")
+//    private String envData;
+//
+//    @RequestMapping("test/config")
+//    public String config(){
+//        JsonObject jsonObject = new JsonObject();
+//        jsonObject.addProperty("consul", consul);
+//        jsonObject.addProperty("name", name);
+//        jsonObject.addProperty("env", env);
+//        jsonObject.addProperty("env_data", envData);
+//
+//        return jsonObject.toString();
+//    }
 
     @GetMapping("/health")
     public String health(){

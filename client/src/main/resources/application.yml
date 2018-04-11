@@ -1,3 +1,7 @@
-
 server:
   port: 8803
+  context-path: /opnextservice/
+
+feign:
+  hystrix:
+    enable: true
